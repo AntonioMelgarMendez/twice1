@@ -1,0 +1,59 @@
+
+* {
+  margin:0;
+  padding :0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+  color:white;
+
+}
+.main{
+  width: 100%;
+  height: 100%;
+
+}
+.video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color:white;
+}
+.overlay{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,1);
+}
+.youtube-button {
+  position: absolute;
+  bottom: 4%; /* Ajusta la distancia desde la parte inferior en porcentaje */
+  left: 3%; /* Ajusta la distancia desde la izquierda en porcentaje */
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  z-index: 1;
+}
+
+.youtube-button:hover {
+ 
+  color: #ec308e;
+  border: 2px solid #ec308e;
+  cursor: pointer;
+
+}

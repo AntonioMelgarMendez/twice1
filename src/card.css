@@ -1,0 +1,118 @@
+/* TopDiscos.css */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    font-size: 14px;
+   
+}
+
+.top-discos-container {
+    margin-top: 440px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-inline: 5px;
+    position: relative;
+    color: black;
+    text-anchor: middle;
+}
+
+
+
+.Titulo {
+    margin-top: 80px;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+
+}
+
+.Titulo2 {
+    align-items: center;
+    text-align: center;
+    font-size: 12px;
+  margin-bottom: 5px;
+  color: rgb(123, 119, 119);
+  background-color: transparent;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-inline: -5px;
+    background-color: transparent; /* Reducido el margen lateral */
+}
+
+.card h2 {
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.card {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    text-align: center;
+    max-width: 250px;
+    background-color: transparent;
+    background-color: transparent;
+}
+.subitulo{
+    margin-top: 5px;
+    color: rgb(121, 133, 133);
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.card-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 50%; /* Agregado para hacer la imagen redonda */
+    margin-bottom: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;;
+}
+
+
+.card-image:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+/* TopDiscos.css */
+/* ... (tu código existente) */
+
+.buybutton {
+    margin-top: 1px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid #000000; /* Añade un borde con el color de resaltado */
+    padding: 10px 20px;
+    cursor: pointer; 
+    border-radius: 40px;/* Ajusta el relleno para que sea más grande */
+}
+
+
+.buybutton:hover  {
+   scale: 1.1;
+     /* Cambia el color del texto al pasar el ratón */
+}
+/* ... (tu código existente) */
+
+.image-hovered {
+    transform: scale(1.1);
+    cursor: pointer;
+}  
+.my-button::before {
+    content: "\u2022"; /* Código Unicode para un punto, puedes cambiarlo por un icono */
+    margin-right: 5px;
+  }
+  
+  /* Efecto de pulsación */
+.my-button:active {
+    transform: translateY(2px);
+}

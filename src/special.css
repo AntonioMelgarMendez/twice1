@@ -1,0 +1,32 @@
+.underline3{
+    width: 120px;
+    height: 6px;
+    background-color: #000000;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2%;
+  }
+
+  .imagen1 {
+    width: 100%; /* Cambié el tamaño de las imágenes a 100% */
+    height: auto;
+
+  }
+  
+  .imagen1:hover {
+    
+    cursor: pointer; /* Cambia la escala al pasar el ratón */
+  }
+.textsub{
+    color: rgb(51, 50, 50);
+    margin-bottom: 18%;
+}
+
+.imagen-container1 {
+    position: relative;
+    overflow: hidden;
+  }
+  .imagen-container1:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+  }

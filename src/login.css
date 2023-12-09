@@ -1,0 +1,149 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background-color: #ed5ca5;
+    padding-bottom: 10px;
+    border-radius: 8%;
+    width: 600px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 20px;
+}
+.text{
+    color:#ffffff ;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+
+}
+.underline1{
+    width: 61px;
+    height: 6px;
+    background-color: #ffffff;
+    
+}
+.inputs{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+.input img{
+margin: 0px 30px;
+}
+.input input{
+    height: 50px;
+    width: 400px;
+    background-color: transparent;
+    border: none;
+    outline:none;
+    color: #797979;
+    font-size: 19px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+}
+.forgot-password{
+
+    margin-top: 17px;
+    color:#fffdfd;
+    font-size: 14px;
+    text-align: center;
+}
+.forgot-password span:hover{
+    cursor: pointer;
+    color: #430000;
+}
+.forgot-password span{
+    color:#fefefe;
+    cursor: pointer;
+}
+.submit-container{
+    display: flex;
+    gap:30px;
+    margin: 35px auto;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 59px;
+    color: #fff;
+    background-color: #000000;
+    border-radius: 50px;
+    font-size: 19px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+.gray{
+    background: #ffffff;
+    color:#797979;
+}
+/* login.css */
+
+/* ... (otros estilos) */
+
+/* Brillitos */
+/* login.css */
+
+/* ... (otros estilos) */
+
+/* Contenedor para brillitos */
+.sparkles-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999; /* Asegura que los brillitos estén sobre otros elementos */
+  }
+  
+  /* Brillitos */
+  .sparkle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background:#ffffff;
+    clip-path: polygon(
+      50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%
+    );
+    animation: sparkleAnimation 1s linear infinite;
+  }
+  
+  /* ... (otros estilos) */
+  
+  
+  /* Animación para el brillito */
+  @keyframes sparkleAnimation {
+    0%, 100% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.5) rotate(180deg);
+    }
+  }
+  

@@ -1,0 +1,45 @@
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    background-color: black;
+
+  }
+  
+  .profile-image {
+    width: 500px; /* Ajusta el tamaño de la imagen según tus necesidades */
+    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    margin-bottom: 20px;
+    background-color: black;
+  }
+  
+  .text-container {
+    max-width: 600px;
+    background-color: black;
+  }
+  
+  .title {
+    font-size: 50px;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    color: rgb(255, 255, 255);
+    text-rendering: geometricPrecision;
+    background-color: transparent;
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 1.5;
+    color:white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    background-color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  

@@ -1,0 +1,165 @@
+.main {
+    background-color: black;
+    
+  }
+.main1{
+  background-color: #ffffff;
+}
+  
+  .imagen-grid-container {
+    text-align: center;
+  }
+  
+  .titulo {
+    color: #000000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    font-size: 35px;
+    margin-top: 2%;
+     margin-bottom: 1px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px; /* Reduzco el espacio entre las imágenes */
+    row-gap: 15px;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;
+    width: 1000px; /* Ajusta el ancho del grid según tus necesidades */
+    margin: auto; /* Centra el grid horizontalmente */
+  }
+  
+  .imagen-container {
+    position: relative;
+    overflow: hidden;
+  }
+  .imagen-container:hover{
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+  }
+  .imagen {
+    width: 100%; /* Cambié el tamaño de las imágenes a 100% */
+    height: auto;
+    transition: transform 0.4s ease; /* Agrega una transición suave para la escala */
+  }
+  
+  .imagen:hover {
+    
+    cursor: pointer; /* Cambia la escala al pasar el ratón */
+  }
+  
+  .texto-superpuesto {
+    background-color:transparent;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+    position: absolute;
+    margin-bottom: 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    width: 100%;
+    opacity: 0; /* Inicialmente, el texto no es visible */
+    transition: opacity 1s ease; /* Agrega una transición suave para la opacidad */
+  }
+  
+  .imagen-container:hover .texto-superpuesto {
+    opacity: 1; /* Hace que el texto sea visible al pasar el ratón */
+  }
+  
+  .bot {
+    margin-bottom:5%;
+  }
+  .botones-container {
+    display: flex;
+   
+    margin-left: 21.5%;/* Centra los botones horizontalmente */
+    margin-top: 20px; /* Ajusta según sea necesario */
+  }
+  
+  .boton1 {
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 130px;
+    border: 2px solid #000000;
+    background-color: #000000;
+    cursor: pointer;
+    border-radius: 10px; /* Hace que los botones sean redondeados */
+    outline: none;
+    margin-bottom: 30px; 
+    color: #fff;
+    /* Quita el contorno predeterminado en algunos navegadores */
+  }
+  .boton {
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 130px;
+    border: none;
+    color: #050505;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 10px; /* Hace que los botones sean redondeados */
+    outline: none;
+    margin-bottom: 30px;
+    border-radius: 15px; /* Quita el contorno predeterminado en algunos navegadores */
+  }
+  .boton1:hover{
+    color: #fff; 
+    border-color: #fff;
+    background-color:#ed5ca5; 
+  }
+  .boton:hover{
+    color: #ed5ca5; 
+    border-color: #ed5ca5;
+  }
+  
+  .boton:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último botón */
+  }
+  
+ /* Agrega esto en tu archivo de estilos CSS */
+.imagen-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 118, 118, 1);
+  color: #fff;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+
+}
+.imagen:hover{
+   opacity: 1;
+  animation: cerrarEsquinaAEsquina 0.1s ease-in-out;
+ 
+}
+.imagen-container:hover .imagen-overlay {
+  opacity: 1;
+  animation: cerrarEsquinaAEsquina 0.1s ease-in-out;
+ 
+}
+
+@keyframes cerrarEsquinaAEsquina {
+  0% {
+    transform: scale(0);
+    background-color: rgba(191, 92, 92, 0.7);
+  
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(255, 118, 118, 0);
+  }
+}
+.underline2{
+  width: 210px;
+  height: 6px;
+  background-color: #000000;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2%;
+}

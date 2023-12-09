@@ -1,0 +1,105 @@
+/* NavbarCenteredWithLogo.css */
+
+.navbar-centered-with-logo {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 10px;
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+  
+  }
+  
+  .logo-container {
+    margin-right: 20px;
+    filter: blur(0.4px);
+  }
+  
+  .logo {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  .nav-toggle {
+    cursor: pointer;
+    display: none;
+    
+  }
+  
+  .bar {
+    width: 25px;
+    height: 1px;
+    background-color: #fff;
+    margin: 5px 0;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    padding: 10px;
+    margin: 0 10px;
+    font-size: 16px;
+  }
+  .nav-list a:hover {
+    color: #ed5ca5; /* Cambia el color al pasar el ratón sobre la opción */
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media screen and (max-width: 768px) {
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-list a {
+      padding: 15px;
+      margin: 0;
+      display: block;
+    }
+  
+    .nav-toggle {
+      display: block;
+    }
+  }
+  /* Añade estos estilos para ajustar la alineación vertical */
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    margin-right: 10px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    perspective: 1000px; 
+  }
+  .logo-container:hover .logo {
+    transform: rotateY(180deg);/* Agrega una transición para hacerla suave */
+  }
+  
+  .logo {
+    max-width: 100px;
+    height: 50px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+  }
+  .rojito{
+      color: #ed5ca5; 
+  }

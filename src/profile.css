@@ -1,0 +1,85 @@
+.main{
+  background-color: rgba(1,1, 1, 1);
+}
+.imagen-grid-container1 {
+  text-align: center;
+}
+
+.titulo1 {
+  color: #000000;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+  font-size: 40px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px; /* Reduzco el espacio entre las imágenes */
+  row-gap: 15px;
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center;
+  width: 1100px; /* Ajusta el ancho del grid según tus necesidades */
+  margin: auto; /* Centra el grid horizontalmente */
+}
+
+.imagen-container1 {
+  position: relative;
+  overflow: hidden;
+}
+.imagen-container1:hover{
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+.imagen1 {
+  width: 100%; /* Cambié el tamaño de las imágenes a 100% */
+  height: auto;
+  transition: transform 0.4s ease; /* Agrega una transición suave para la escala */
+}
+
+.imagen1:hover {
+  
+  cursor: pointer; /* Cambia la escala al pasar el ratón */
+}
+
+.texto-superpuesto1 {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-size: 18px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0; /* Inicialmente, el texto no es visible */
+  transition: opacity 0.4s ease; /* Agrega una transición suave para la opacidad */
+}
+
+.imagen-container1:hover .texto-superpuesto1 {
+  opacity: 1; /* Hace que el texto sea visible al pasar el ratón */
+}
+
+.bot1 {
+  margin-bottom:5%;
+}
+.contenedor-texto-con-linea1 {
+  position: relative;
+  display: inline-block;
+}
+
+.contenedor-texto-con-linea1 span {
+  display: block;
+}
+
+.contenedor-texto-con-linea1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Altura de la línea */
+  background-color: rgb(0, 0, 0); /* Color de la línea */
+}

@@ -1,0 +1,80 @@
+/* En tu archivo de estilos (mobile.css) */
+.backgroundfinal {
+    background-color: #ffc99b;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', '游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+  }
+  
+  .fanclub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+  }
+  
+  .fanclub-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px; /* Ajusta según sea necesario */
+    margin-bottom: 20px;
+  }
+  
+  .fanclub-text {
+    text-align: left;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .fanclub-text h2 {
+    color: #ed5ca5;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .fanclub-text p {
+    color: #464043;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .phone-image img {
+    width: 250%;
+    margin-top: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 1000px;
+    margin: auto;
+   margin-top: 20px;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255,0.7);
+    color: #ed5ca5;
+    text-align: center;
+  }
+  
+  .grid-item h3 {
+    color: #333;
+    color: #ed5ca5;
+    font-size: 20px;
+  }
+  
+  .grid-item p {
+    color: #817b7b;
+    font-size: 15px;
+  }
+  .contentid h2{
+    margin-top: 20px;
+    color: #ed5ca5;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }

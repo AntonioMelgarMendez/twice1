@@ -1,0 +1,59 @@
+/* carrousel.css */
+.Slider{
+    background-color: #000000;
+}
+.carousel-item {
+    position: relative;
+    height: 500px;
+     /* Establece la altura deseada */
+}
+.div{
+    background-color: #1d1d1d;
+}
+.carousel-item img {
+    width: 100%;
+    height: 100%; /* Hace que la imagen llene completamente su contenedor */
+    object-fit: cover; /* Mantiene la proporción y cubre completamente el contenedor */
+    border-radius: 10px;
+    filter: brightness(80%);
+    background-color: #000000;
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 6px; /* Ajusta la distancia desde la parte inferior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
+    color: white;
+    font-size: 18px; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+    text-align: left;
+    width: 80%;
+    background: rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top:88%; /* Ajusta la distancia desde la parte superior */
+    right: 88%; /* Ajusta la distancia desde la derecha */
+    padding: 5px 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue','游ゴシック Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', meiryo, sans-serif;
+  /* Tamaño del texto */
+    color: #ffffff;
+    border: 1px solid rgba(0, 0, 0,0.9);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 18px;
+    z-index: 1; /* Asegura que el botón esté en el frente */
+}
+
+.carousel-button:hover {
+
+    color: #000000;
+    border: 1px solid rgba(254, 250, 250, 0.7);
+    border-radius: 5px;
+    background-color: rgba(254, 250, 250, 0.7);
+}
