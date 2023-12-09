@@ -16,14 +16,14 @@ function App() {
       <BrowserRouter>
        <Routes>
        <Route path="twice1/" element={<Main/>}></Route>
-        <Route path="twice1/home" element={<Main/>}></Route>
-        <Route path="twice1/profile" element={<Profile/>}></Route>
-        <Route path="twice1/discography" element={<Discography/>}></Route>
-        <Route path="twice1/fanclub" element={<FanClub/>}></Route>
-        <Route path="twice1/schedule" element={<Schedule/>}></Route>
-        <Route path="twice1/news" element={<News/>}></Route>
-        <Route path="twice1/mobile" element={<Mobile/>}></Route>
-        <Route path="twice1/special" element={<Special/>}></Route>
+        <Route path="home" element={<Main/>}></Route>
+        <Route path="profile" element={<Profile/>}></Route>
+        <Route path="discography" element={<Discography/>}></Route>
+        <Route path="fanclub" element={<FanClub/>}></Route>
+        <Route path="schedule" element={<Schedule/>}></Route>
+        <Route path="news" element={<News/>}></Route>
+        <Route path="mobile" element={<Mobile/>}></Route>
+        <Route path="special" element={<Special/>}></Route>
        </Routes>
       </BrowserRouter>
  
