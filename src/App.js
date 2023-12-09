@@ -9,24 +9,51 @@ import Schedule from "./Schedule";
 import News from "./news";
 import Mobile from "./mobile";
 import Special from "./special";
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+
+import { createHashRouter,RouterProvider } from "react-router-dom";
+const router = createHashRouter([
+  {
+    path:"/",
+    element:<Main/>
+  },
+  {
+    path:"/home",
+    element:<Main/>
+  },
+  {
+    path:"/profile",
+    element:<Profile/>
+  },
+  {
+    path:"/discography",
+    element:<Discography/>
+  },
+  {
+    path:"/fanclub",
+    element:<FanClub/>
+  },
+  {
+    path:"/schedule",
+    element:<Schedule/>
+  },
+  {
+    path:"/news",
+    element:<News/>
+  },
+  {
+    path:"/mobile",
+    element:<Mobile/>
+  },
+  {
+    path:"/special",
+    element:<Special/>
+  }  
+
+])
 function App() {
   return (
     <div>
-      <BrowserRouter>
-       <Routes>
-       <Route path="twice1/" element={<Main/>}></Route>
-        <Route path="home" element={<Main/>}></Route>
-        <Route path="profile" element={<Profile/>}></Route>
-        <Route path="discography" element={<Discography/>}></Route>
-        <Route path="fanclub" element={<FanClub/>}></Route>
-        <Route path="schedule" element={<Schedule/>}></Route>
-        <Route path="news" element={<News/>}></Route>
-        <Route path="mobile" element={<Mobile/>}></Route>
-        <Route path="special" element={<Special/>}></Route>
-       </Routes>
-      </BrowserRouter>
- 
+      <RouterProvider router={router}/>
     </div>
   );
 }
