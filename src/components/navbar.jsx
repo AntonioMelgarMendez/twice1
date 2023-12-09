@@ -22,20 +22,20 @@ const NavbarCenteredWithLogo = () => {
       </div>
       <ul className="nav-list">
       
-        <li><a href="home">HOME</a></li>
+        <li><a href="#home">HOME</a></li>
         
-        <li><a href="profile">PROFILE</a></li>
-        <li><a href="news">NEWS</a></li>
-        <li><a href="schedule">SCHEDULE</a></li>
+        <li><a href="#profile">PROFILE</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#schedule">SCHEDULE</a></li>
         <li className="logo-container">
           <div className="logo">
             <img src={image} alt="Logo" className="logo" />
           </div>
         </li>
-        <li><a href="discography">DISCOGRAPHY</a></li>
-        <li><a href="special">SPECIAL</a></li>
-        <li><a href="fanclub">FANCLUB</a></li>
-        <li><a href="mobile">MOBILE</a></li>
+        <li><a href="#discography">DISCOGRAPHY</a></li>
+        <li><a href="#special">SPECIAL</a></li>
+        <li><a href="#fanclub">FANCLUB</a></li>
+        <li><a href="#mobile">MOBILE</a></li>
       </ul>
     </nav>
   );
