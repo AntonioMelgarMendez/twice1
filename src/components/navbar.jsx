@@ -1,4 +1,4 @@
-// NavbarCenteredWithLogo.js
+// NavbarCenteredWithoutLogo.js
 
 import React, { useState } from 'react';
 import image from "../sources/logo1.png";
